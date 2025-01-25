@@ -1,4 +1,4 @@
-const server = "http://54.179.124.238:5003";
+const server = "http://192.168.0.105:5003";
 const socket = io(server);
 
 const customID = "device01";

@@ -16,6 +16,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: "*", // Allow all origins for testing. Restrict this in production.
+    methods: ["GET", "POST"],
   },
 });
 
