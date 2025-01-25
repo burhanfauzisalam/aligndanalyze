@@ -1,11 +1,11 @@
 const { queryDatabase } = require("./db");
 
-const createDataTable = async() => {
+const createDataTable = async () => {
   const sql = `
     CREATE TABLE IF NOT EXISTS data (
       id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
       customID varchar(50) DEFAULT NULL,
-      data varchar(50) DEFAULT NULL,
+      data INT DEFAULT NULL,
       time datetime DEFAULT CURRENT_TIMESTAMP
     )
   `;
